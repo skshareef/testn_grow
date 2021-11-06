@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learning Javascript</title>
+<link rel="stylesheet" type="text/css" href="s1.css">
+</head>
+<body onload="alert('welcome(OnLoad Event Executed)')">
+<div class="header">
+<h1 id="heading">Learning Javascript</h1>
+</div>
+Dollars<input type="text" oninput="fun()" id="t1">
+Rs<input type="text" id="t2"><br /><br />
+<select id="s1" onchange="fun1()">
+<option value="red">red</option>
+<option value="blue">blue</option>
+<option value="green">green</option>
+<option value="pink">pink</option>
+</select>
+<input type="text" placeholder="Key Released example" onkeyup="alert('key released')">
+<input type="text" placeholder="Key Pressed example" onkeydown="alert('key pressed')">
+Decimal<input type="text" id="myInput" onmouseover="fun2()">
+<br \><br \>
+OnFocus/OnBlur Event<input type="text" id="s2" onfocus="focusFunction()" onblur="blurFunction()">
+<h2>Form </h2>
+<form onsubmit="myFunction()">
+Enter name: <input type="text" name="fname"><br /><br />
+Address: <input type="text" name="fname"><br /><br />
+Email: <input type="text" name="fname"><br /><br />
+<input type="Submit">
+<br /><br />
+<input type="text" id="6" onmouseover="fun3()" onmouseout="fun6()" style=background-color:red>Red
+<input type="text" id="7" onmouseover="fun4()" onmouseout="fun6()" style=background-color:black>Black
+<input type="text" id="8" onmouseover="fun5()" onmouseout="fun6()" style=background-color:blue>Blue
+</form>
+<script>
+function fun2()
+{
+document.getElementById("myInput").style.height="50px";
+document.getElementById("myInput").style.width="200px";
+}
+function fun()
+{
+var y=document.getElementById("t1").value;
+var z=y*65;
+document.getElementById("t2").value=z;
+}
+function fun1()
+{
+var a=document.getElementById("s1").value;
+document.body.style.backgroundColor=a;
+}
+function doClick()
+{
+alert('you clicked!');
+}
+function fun3()
+{
+document.body.style.backgroundColor="red";
+}
+function fun4()
+{document.body.style.backgroundColor="black";
+}
+function fun5()
+{document.body.style.backgroundColor="blue";
+}
+function fun6()
+{document.body.style.backgroundColor="cornsilk"
+}
+function focusFunction()
+{
+document.getElementById("s2").style.background = "yellow";
+}
+function blurFunction()
+{
+document.getElementById("s2").style.background = "red";
+}
+function myFunction()
+{
+alert("your form got submitted");
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
